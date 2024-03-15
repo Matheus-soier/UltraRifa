@@ -6,6 +6,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useSideBar } from "@/context/SideBarContext";
+import { BarItemMenu } from "./BarItemMenu";
 
 export const Header = () => {
 
@@ -32,7 +33,7 @@ export const Header = () => {
 
     return(
         <header className="fixed z-10 bg-white w-screen h-fit flex items-center justify-center shadow">
-            <div className="max-w-screen-2xl py-2 px-3 flex justify-between items-center w-full h-hull">
+            <div className="max-w-screen-xl md:py-1 px-3 flex justify-between items-center w-full h-hull">
                 <div className="flex items-center gap-4">
                     <Link href={"/"} className="transition-all ease-in-out hover:opacity-80">
                         <Image src={image} alt={"Logo UltraRifa"} width={imageSize} height={0}/>
@@ -41,6 +42,30 @@ export const Header = () => {
                         {!useCtx.expanded && <MenuOpen style="text-3xl"/>}
                         {useCtx.expanded && <MenuClose style="text-3xl"/>}
                     </button>
+                </div>
+                <ul className="hidden md:flex items-center gap-5">
+                <div className="flex flex-col w-fit group cursor-pointer">
+                    <Link href={'/'} className="transition-all ease-in-out hover:text-primary">
+                        <li>Preços</li>
+                    </Link>
+                    <BarItemMenu/>
+                </div>
+                <div className="flex flex-col w-fit group cursor-pointer">
+                    <Link href={'/'} className="transition-all ease-in-out hover:text-primary">
+                        <li>Sobre Nós</li>
+                    </Link>
+                    <BarItemMenu/>
+                </div>
+                <div className="flex flex-col w-fit group cursor-pointer">
+                    <Link href={'/'} className="transition-all ease-in-out hover:text-primary">
+                        <li>Ajuda</li>
+                    </Link>
+                    <BarItemMenu/>
+                </div>
+                </ul>
+                <div className="hidden md:flex items-center gap-5">
+                    <Link href={'/'} className="font-semibold text-primary text-lg transition-all ease-in-out hover:text-green-900">Login</Link>
+                    <Link href={'/'} className="bg-gradient-to-r from-primary to-second font-semibold text-white text-lg px-6 py-1 rounded-full transition-all ease-in-out hover:opacity-80">Criar Conta</Link>
                 </div>
             </div>
         </header>
