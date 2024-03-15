@@ -63,9 +63,9 @@ export const Header = () => {
                     <BarItemMenu/>
                 </div>
                 </ul>
-                <div className="hidden md:flex items-center gap-5">
-                    <Link href={'/'} className="font-semibold text-primary text-lg transition-all ease-in-out hover:text-green-900">Login</Link>
-                    <Link href={'/'} className="bg-gradient-to-r from-primary to-second font-semibold text-white text-lg px-6 py-1 rounded-full transition-all ease-in-out hover:opacity-80">Criar Conta</Link>
+                <div className="flex items-center gap-0 md:gap-5">
+                    <Link href={'/'} className="pr-4 md:pr-0 font-semibold text-primary text-lg transition-all ease-in-out hover:text-green-900">Login</Link>
+                    <Link href={'/'} className="hidden ss:inline-block bg-gradient-to-r from-primary to-second font-semibold text-white text-lg px-6 py-1 rounded-lg transition-all ease-in-out hover:opacity-80">Criar Conta</Link>
                 </div>
             </div>
         </header>

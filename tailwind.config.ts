@@ -12,6 +12,9 @@ const config: Config = {
         "primary": "#00635b",
         "second": "#00BE63",
       },
+      screens: {
+        "ss": "425px",
+      }
     },
   },
   plugins: [],
