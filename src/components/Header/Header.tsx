@@ -7,7 +7,6 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useSideBar } from "@/context/SideBarContext";
 
-
 export const Header = () => {
 
     const useCtx = useSideBar();

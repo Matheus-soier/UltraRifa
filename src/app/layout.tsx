@@ -20,11 +20,11 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className={`flex flex-col ${inter.className}`}>
-        <SideBarProvider>
-          <Header/>
-          <SideBar />
-          {children}
-        </SideBarProvider>
+          <SideBarProvider>
+            <Header/>
+            <SideBar />
+            {children}
+          </SideBarProvider>
       </body>
     </html>
   );

@@ -9,17 +9,8 @@ type SideBarContextProps = {
 
 const SideBarContext = createContext<SideBarContextProps | null>(null);
 
-const STORAGE_KEY = "SideBarContextKey";
-
 export const SideBarProvider = ({children}: {children: ReactNode}) => {
-    const [expanded, setExpanded] = useState<boolean>(() => {
-        const stored = localStorage.getItem(STORAGE_KEY);
-        return stored ? JSON.parse(stored) : false;
-    });
-
-    useEffect(() => {
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(expanded));
-    }, [expanded]);
+    const [expanded, setExpanded] = useState<boolean>(false);
 
     return(
         <SideBarContext.Provider value={{ expanded, setExpanded }}>
