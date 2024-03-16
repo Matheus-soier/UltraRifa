@@ -46,7 +46,7 @@ export const Footer = () => {
                     </div>
                 </div>
                 <div className="flex flex-col lg:flex-row justify-between pt-5 items-center text-center lg:text-start gap-3">
-                    <p className="text-gray-500">Copyright © 2023 - 2024 UltraRifa <br /> Todos os direitos reservados</p>
+                    <p className="text-gray-500 text-sm ss:text-base">Copyright © 2023 - 2024 UltraRifa <br /> Todos os direitos reservados</p>
                     <Link href={'/'} className="bg-primary text-white px-2 py-1 rounded-md flex items-center gap-1 hover:opacity-80 transition-all ease-in-out">
                         <ArrowTopIcon />
                         <span>Voltar ao Topo</span>

@@ -3,8 +3,10 @@ import { FaFacebookF } from "react-icons/fa";
 
 export const FacebookIcon = () => {
     return(
-        <Link href={'/'} className="bg-gray-200 p-2 rounded-lg hover:opacity-80 transition-all ease-in-out">
-            <FaFacebookF className="text-3xl" />
+        <Link href={'/'}>
+            <button className="bg-gray-500 p-2 rounded-lg">
+                <FaFacebookF className="text-3xl" />
+            </button>
         </Link>
     );
 }

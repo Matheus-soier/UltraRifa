@@ -20,7 +20,7 @@ const Page = () => {
         </div>
         <div className="relative flex justify-center">
           <div className="relative">
-            <Image src="/hero.png" alt="Celular mostrando a plataforma" width={400} height={300} />
+            <Image src="/hero.webp" alt="Celular mostrando a plataforma" width={400} height={300} />
             <div className="absolute -top-10 -right-5">
               <Image src="/king-ultrarifa.svg" alt="Rei Ultrarifa" width={70} height={70} />
             </div>
@@ -32,7 +32,7 @@ const Page = () => {
           <h2 className=" font-bold text-3xl md:text-5xl capitalize">Veja como é simples.</h2>
           <p>Praticidade e simplicidade para criar com tranquilidade as suas campanhas</p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 items-center w-full h-fit">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 items-center w-full h-fit">
             <GridMainItem title="Crie" body="Preencha os campos de sua campanha" image="/crie.svg" />
             <GridMainItem title="Publique" body="Pague a taxa de publicação" image="/publique.svg" />
             <GridMainItem title="Compartilhe" body="Compartilhe o seu link" image="/compartilhe.svg" />
