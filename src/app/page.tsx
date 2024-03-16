@@ -1,10 +1,10 @@
+import { Button } from "@/components/Button";
 import { GridMainItem } from "@/components/GridMainItem";
 import Image from "next/image";
-import Link from "next/link";
 
 const Page = () => {
   return(
-    <div className="mt-[60px] w-screen flex flex-col items-center px-3">
+    <div className="mt-16 md:mt-24 w-screen flex flex-col items-center px-3">
       <section className="max-w-screen-xl w-full h-fit px-3 my-6 grid grid-cols-1 md:grid-cols-2 gap-5 items-center md:pt-10">
         <div className="flex flex-col gap-3">
           <h1 className="font-bold capitalize text-4xl ss:text-5xl
@@ -16,9 +16,7 @@ const Page = () => {
             </div>
           </div> em questão de minutos!</h1>
           <p>Plataforma completa para você criar suas campanhas e alcançar um público maior através da UltraRifa.</p>
-          <Link href={'/'}>
-            <button className="bg-gradient-to-r to-second from-primary text-white px-6 py-2 font-bold rounded-full">Criar Minha Campanha</button>
-          </Link>
+          <Button link="/" value="Criar minha campanha"/>
         </div>
         <div className="relative flex justify-center">
           <div className="relative">
@@ -29,15 +27,19 @@ const Page = () => {
         </div>
        </div>
       </section>
-      <section className="max-w-screen-xl flex flex-col gap-6 my-6 w-full h-fit px-3">
-        <h2 className="text-center font-bold text-3xl capitalize">a maneira mais fácil de criar uma Rifa</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 items-center">
-            <GridMainItem title="Teste" body="Teste de algum corpo muito legal de exemplo aqui ara meu grid text hahaa" rows={2}/>
-            <GridMainItem title="Teste" body="Teste de algum corpo muito legal de exemplo aqui ara meu grid text hahaa" rows={3} />
-            <GridMainItem title="Teste" body="Teste de algum corpo muito legal de exemplo aqui ara meu grid text hahaa" rows={2} />
-            <GridMainItem title="Teste" body="Teste de algum corpo muito legal de exemplo aqui ara meu grid text hahaa" rows={1} />
+      <section className="max-w-screen-xl flex flex-col items-center gap-6 my-8 md:my-16 w-full h-fit px-3">
+        <div className="space-y-2 w-full text-center">
+          <h2 className=" font-bold text-3xl capitalize">Veja como é simples.</h2>
+          <p>Praticidade e simplicidade para criar com tranquilidade as suas campanhas</p>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 items-center w-full h-fit">
+            <GridMainItem title="Crie" body="Preencha os campos de sua campanha" image="/crie.svg" />
+            <GridMainItem title="Publique" body="Pague a taxa de publicação" image="/publique.svg" />
+            <GridMainItem title="Compartilhe" body="Compartilhe o seu link" image="/compartilhe.svg" />
+            <GridMainItem title="Arrecade" body="Toda a arrecadação vai para você!" image="/arrecade.svg" />
         </div>
       </section>
+      
     </div>
   );
 }

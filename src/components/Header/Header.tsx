@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useSideBar } from "@/context/SideBarContext";
 import { BarItemMenu } from "./BarItemMenu";
+import { Button } from "../Button";
 
 export const Header = () => {
 
@@ -65,7 +66,7 @@ export const Header = () => {
                 </ul>
                 <div className="flex items-center gap-0 md:gap-5">
                     <Link href={'/'} className="pr-4 md:pr-0 font-semibold text-black text-lg transition-all ease-in-out hover:text-green-900">Login</Link>
-                    <Link href={'/'} className="hidden ss:inline-block bg-gradient-to-r from-primary to-second font-semibold text-white text-lg px-6 py-1 rounded-lg transition-all ease-in-out hover:opacity-80">Criar Conta</Link>
+                    <Button link="/" value={"Criar Conta"} hidden={true}/>
                 </div>
             </div>
         </header>
