@@ -8,6 +8,7 @@ import Link from "next/link";
 import { useSideBar } from "@/context/SideBarContext";
 import { BarItemMenu } from "./BarItemMenu";
 import { Button } from "../Button";
+import { Logo } from "../Logo";
 
 export const Header = () => {
 
@@ -36,9 +37,7 @@ export const Header = () => {
         <header className="fixed -top-[1px] left-0 z-20 bg-white w-screen h-fit flex items-center justify-center shadow backdrop-blur-md bg-white/60">
             <div className="max-w-screen-xl md:py-1 px-3 flex justify-between items-center w-full h-full">
                 <div className="flex items-center gap-4">
-                    <Link href={"/"} className="transition-all ease-in-out hover:opacity-80">
-                        <Image src={image} alt={"Logo UltraRifa"} width={imageSize} height={0}/>
-                    </Link>
+                    <Logo link={image} size={imageSize}/>
                     <button className="block md:hidden" onClick={() => useCtx.setExpanded(!useCtx.expanded)}>
                         {!useCtx.expanded && <MenuOpen style="text-3xl"/>}
                         {useCtx.expanded && <MenuClose style="text-3xl"/>}

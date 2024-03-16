@@ -4,6 +4,7 @@ import "./globals.css";
 import { Header } from "@/components/Header/Header";
 import { SideBar } from "@/components/SideBar/SideBar";
 import { SideBarProvider } from "@/context/SideBarContext";
+import { Footer } from "@/components/Footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +25,7 @@ export default function RootLayout({
             <Header/>
             <SideBar />
             {children}
+            <Footer />
           </SideBarProvider>
       </body>
     </html>

@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const Page = () => {
   return(
-    <div className="mt-16 md:mt-24 w-screen flex flex-col items-center px-3">
-      <section className="max-w-screen-xl w-full h-fit px-3 my-6 grid grid-cols-1 md:grid-cols-2 gap-5 items-center md:pt-10">
+    <div className="mt-20 md:mt-28 w-screen flex flex-col items-center px-3">
+      <section className="max-w-screen-xl w-full h-fit px-3 mb-10 md:mb-28 grid grid-cols-1 md:grid-cols-2 gap-5 items-center md:pt-10">
         <div className="flex flex-col gap-3">
           <h1 className="font-bold capitalize text-4xl ss:text-5xl
           md:text-6xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-r to-second from-primary">Crie sua 
@@ -27,9 +27,9 @@ const Page = () => {
         </div>
        </div>
       </section>
-      <section className="max-w-screen-xl flex flex-col items-center gap-6 my-8 md:my-16 w-full h-fit px-3">
-        <div className="space-y-2 w-full text-center">
-          <h2 className=" font-bold text-3xl capitalize">Veja como é simples.</h2>
+      <section className="max-w-screen-xl flex flex-col items-center gap-6 mb-10 md:mb-28 w-full h-fit px-3">
+        <div className="space-y-5 w-full text-center">
+          <h2 className=" font-bold text-3xl md:text-5xl capitalize">Veja como é simples.</h2>
           <p>Praticidade e simplicidade para criar com tranquilidade as suas campanhas</p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 items-center w-full h-fit">
@@ -39,7 +39,6 @@ const Page = () => {
             <GridMainItem title="Arrecade" body="Toda a arrecadação vai para você!" image="/arrecade.svg" />
         </div>
       </section>
-      
     </div>
   );
 }
