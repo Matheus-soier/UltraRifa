@@ -1,3 +1,4 @@
+import { GridMainItem } from "@/components/GridMainItem";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -30,19 +31,11 @@ const Page = () => {
       </section>
       <section className="max-w-screen-xl flex flex-col gap-6 my-6 w-full h-fit px-3">
         <h2 className="text-center font-bold text-3xl capitalize">a maneira mais fácil de criar uma Rifa</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 grid-rows-4 gap-5 items-center">
-          <div className="row-span-2 h-full border border-gray-50 shadow p-6 rounded-xl">
-            Teste
-          </div>
-          <div className="row-span-3 h-full border border-gray-50 shadow p-6 rounded-xl">
-            Teste
-          </div>
-          <div className="row-span-2 h-full border border-gray-50 shadow p-6 rounded-xl">
-            Teste
-          </div>
-          <div className="row-span-1 h-full border border-gray-50 shadow p-6 rounded-xl">
-            Teste
-          </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 items-center">
+            <GridMainItem title="Teste" body="Teste de algum corpo muito legal de exemplo aqui ara meu grid text hahaa" rows={2}/>
+            <GridMainItem title="Teste" body="Teste de algum corpo muito legal de exemplo aqui ara meu grid text hahaa" rows={3} />
+            <GridMainItem title="Teste" body="Teste de algum corpo muito legal de exemplo aqui ara meu grid text hahaa" rows={2} />
+            <GridMainItem title="Teste" body="Teste de algum corpo muito legal de exemplo aqui ara meu grid text hahaa" rows={1} />
         </div>
       </section>
     </div>
