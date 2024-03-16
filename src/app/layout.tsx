@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={`flex flex-col ${inter.className}`}>
+      <body className={`flex flex-col bg-gray-50 overflow-x-hidden ${inter.className}`}>
           <SideBarProvider>
             <Header/>
             <SideBar />
