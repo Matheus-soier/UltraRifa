@@ -49,7 +49,7 @@ export const Footer = () => {
                         <div className="flex flex-col gap-3">
                             <h3 className="font-bold text-2xl">Contato</h3>
                             <ul className="flex flex-col gap-2 text-gray-500 text-sm ss:text-base">
-                                <LinkItem link="/" label="Whatsapp"/>
+                                <LinkItem link="https://wa.link/6n6jsm" label="Whatsapp"/>
                                 <LinkItem link="/" label="contato@ultrarifa.com.br"/>
                             </ul>
                         </div>

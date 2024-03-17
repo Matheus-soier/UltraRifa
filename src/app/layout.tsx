@@ -20,11 +20,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={`flex flex-col bg-gray-50 overflow-x-hidden ${inter.className}`}>
+      <body className={`flex flex-col min-h-screen max-w-screen justify-between bg-gray-50 overflow-x-hidden ${inter.className}`}>
           <SideBarProvider>
             <Header/>
             <SideBar />
-            {children}
+              {children}
             <Footer />
           </SideBarProvider>
       </body>

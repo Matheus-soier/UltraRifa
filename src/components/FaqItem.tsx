@@ -39,7 +39,7 @@ export const FaqItem = ({ children, label, link = false }: Props) => {
                 </div>
             )}
             {link && (
-                <Link href={'/'}>
+                <Link href={'/prices'}>
                     <span className="bg-white px-6 py-3 rounded-2xl border border-gray-200 cursor-pointer hover:border-primary/30 transition-all ease-in-out duration-300 flex items-center justify-between gap-3 font-bold">
                         {label}
                         <div>

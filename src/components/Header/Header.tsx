@@ -2,7 +2,6 @@
 
 import { MenuOpen } from "@/icons/MenuOpenIcon";
 import { MenuClose } from "@/icons/MenuCloseIcon";
-import Image from "next/image";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useSideBar } from "@/context/SideBarContext";
@@ -45,7 +44,7 @@ export const Header = () => {
                 </div>
                 <ul className="hidden md:flex items-center gap-5">
                 <div className="flex flex-col w-fit group cursor-pointer">
-                    <Link href={'/'} className="transition-all ease-in-out hover:text-primary">
+                    <Link href={'/prices'} className="transition-all ease-in-out hover:text-primary">
                         <li>Preços</li>
                     </Link>
                     <BarItemMenu/>

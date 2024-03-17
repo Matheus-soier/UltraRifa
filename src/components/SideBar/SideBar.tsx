@@ -29,7 +29,7 @@ export const SideBar = () => {
             <div className=" mt-[58px]">
               <ItemMenu icon={<LoginIcon/>} title={"Login"} link={"/"} style="ss:hidden" custom="bg-primary/30 text-primary"/>
               <ItemMenu icon={<SignInIcon/>} title={"Criar Conta"} link={"/"} style="ss:hidden" custom="bg-primary/30 text-primary"/>
-              <ItemMenu icon={<MoneyIcon/>} title={"Preços"} link={"/"}/>
+              <ItemMenu icon={<MoneyIcon/>} title={"Preços"} link={"/prices"}/>
               <ItemMenu icon={<AboutUsIcon/>} title={"Sobre Nós"} link={"/"}/>
               <ItemMenu icon={<SupportIcon/>} title={"Central de Ajuda"} link={"/"}/>
             </div>
