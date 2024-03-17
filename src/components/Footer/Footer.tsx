@@ -1,4 +1,5 @@
-import Link from "next/link";
+"use client"
+
 import { Logo } from "../Logo";
 import { InstagramIcon } from "@/icons/Instagram";
 import { FacebookIcon } from "@/icons/FacebookIcon";
@@ -6,6 +7,14 @@ import { ArrowTopIcon } from "@/icons/ArrowTopIcon";
 import { LinkItem } from "./LinkItem";
 
 export const Footer = () => {
+    const scrollToTop = () => {
+        const c = document.documentElement.scrollTop || document.body.scrollTop;
+        if (c > 0) {
+          window.requestAnimationFrame(scrollToTop);
+          window.scrollTo(0, c - c / 8);
+        }
+      };
+
     return(
         <footer className="w-screen h-fit flex justify-center bg-white border-t py-10 border-gray-200">
             <div className="max-w-screen-xl w-full px-3 ">
@@ -46,13 +55,13 @@ export const Footer = () => {
                     </div>
                 </div>
                 <div className="flex flex-col lg:flex-row justify-between pt-5 items-center text-center lg:text-start gap-3">
-                    <p className="text-gray-500 text-sm ss:text-base">Copyright © 2023 - 2024 UltraRifa <br /> Todos os direitos reservados</p>
-                    <Link href={'/'} className="bg-primary text-white px-2 py-1 rounded-md flex items-center gap-1 hover:opacity-80 transition-all ease-in-out">
+                    <p className="text-gray-500 text-sm ss:text-base">Copyright © 2024 UltraRifa <br /> Todos os direitos reservados</p>
+                    <button onClick={scrollToTop} className="bg-primary text-white px-2 py-1 rounded-md flex items-center gap-1 hover:opacity-80 transition-all ease-in-out">
                         <ArrowTopIcon />
                         <span>Voltar ao Topo</span>
-                    </Link>
+                    </button>
                 </div>
             </div>
         </footer>
     );
-}
+};
