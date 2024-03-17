@@ -13,6 +13,7 @@ const config: Config = {
         "second": "#00BE63",
       },
       screens: {
+        "sp": "300px",
         "ss": "425px",
       }
     },

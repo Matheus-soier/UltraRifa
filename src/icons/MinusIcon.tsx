@@ -3,6 +3,6 @@ import { HiOutlineMinus } from "react-icons/hi";
 
 export const MinusIcon = () => {
     return(
-        <HiOutlineMinus className="text-xl duration-150 transition-all ease-in-out" />
+        <HiOutlineMinus className="text-xl transition-all duration-1000 ease-in-out" />
     );
 }
