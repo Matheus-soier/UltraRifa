@@ -35,28 +35,23 @@ const Page = () => {
           <p>Praticidade e simplicidade para criar com tranquilidade as suas campanhas</p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 items-center w-full h-fit">
-          <GridMainItem title="Crie" body="Preencha os campos de sua campanha" image="/crie.svg" />
-          <GridMainItem title="Publique" body="Pague a taxa de publicação" image="/publique.svg" />
+          <GridMainItem title="Crie" body="Preencha os campos de sua campanha" image="/crie.svg"/>
+          <GridMainItem title="Publique" body="Pague a taxa de publicação" image="/publique.svg"/>
           <GridMainItem title="Compartilhe" body="Compartilhe o seu link" image="/compartilhe.svg" />
-          <GridMainItem title="Arrecade" body="Toda a arrecadação vai para você!" image="/arrecade.svg" />
+          <GridMainItem title="Arrecade" body="Toda a arrecadação vai para você!" image="/arrecade.svg"/>
         </div>
         <Button link="/" value="Criar minha campanha" custom="lg:hidden" />
       </section>
       <section className="max-w-screen-xl flex flex-col items-center gap-6 md:gap-12 mb-10 md:mb-24 w-full text-center h-fit px-3">
         <h2 className="font-bold text-3xl md:text-5xl capitalize">Por que usar a UltraRifa?</h2>
-        <div className="flex flex-col items-center gap-3">
+        <div className="flex flex-col w-full items-center gap-6 md:gap-12">
           <div className="grid grid-cols-1 sp:grid-cols-2 gap-3 w-full">
             <GridMainNumber number="+2 Mil" label="Campanhas criadas com a plataforma" />
             <GridMainNumber number="+3 Mi" label="Pedidos através da plataforma" />
-            <GridMainNumber number="+2,6 Mi" label="Visualizações nos últimos 30 dias" />
-            <GridMainNumber number="1 ano" label="Atuando e inovando o mercado de rifas" />
+            <GridMainNumber number="+2 Mi" label="Visualizações nos últimos 30 dias" />
+            <GridMainNumber number="1 ano" label="Atuando e inovando o mercado" />
           </div>
-          <div className="grid grid-cols-1 sp:grid-cols-2 lg:grid-cols-4 gap-3 w-full">
-            <GridMainNumber number="+2 Mil" label="Campanhas criadas com a plataforma" />
-            <GridMainNumber number="+3 Mi" label="Pedidos através da plataforma" />
-            <GridMainNumber number="+2,6 Mi" label="Visualizações nos últimos 30 dias" />
-            <GridMainNumber number="1 ano" label="Atuando e inovando o mercado de rifas" />
-          </div>
+          <Button link="/" value="Criar minha campanha" custom="hidden lg:flex" />
         </div>
       </section>
       <section className="max-w-screen-xl flex flex-col items-center gap-6 md:gap-12 mb-10 md:mb-24 w-full h-fit px-3">

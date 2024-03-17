@@ -5,6 +5,7 @@ import { InstagramIcon } from "@/icons/Instagram";
 import { FacebookIcon } from "@/icons/FacebookIcon";
 import { ArrowTopIcon } from "@/icons/ArrowTopIcon";
 import { LinkItem } from "./LinkItem";
+import { BtnWhatsapp } from "../BtnWhatsapp";
 
 export const Footer = () => {
     const scrollToTop = () => {
@@ -62,6 +63,7 @@ export const Footer = () => {
                     </button>
                 </div>
             </div>
+            <BtnWhatsapp />
         </footer>
     );
 };
