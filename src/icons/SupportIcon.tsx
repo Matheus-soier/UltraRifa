@@ -1,7 +1,7 @@
-import { HiOutlineSupport } from "react-icons/hi";
+import { BiSupport } from "react-icons/bi";
 
 export const SupportIcon = () => {
     return(
-        <HiOutlineSupport />
+        <BiSupport />
     );
 }

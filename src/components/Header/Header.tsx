@@ -33,7 +33,7 @@ export const Header = () => {
     }, []);
 
     return(
-        <header className="fixed -top-[1px] left-0 z-20 bg-white w-screen h-fit flex items-center justify-center shadow backdrop-blur-md bg-white/60">
+        <header className="fixed -top-[1px] left-0 z-20 bg-white w-screen h-fit flex items-center justify-center shadow">
             <div className="max-w-screen-xl md:py-1 px-3 flex justify-between items-center w-full h-full">
                 <div className="flex items-center gap-4">
                     <Logo link={image} size={imageSize}/>

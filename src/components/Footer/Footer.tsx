@@ -33,7 +33,7 @@ export const Footer = () => {
                             <h3 className="font-bold text-2xl">Páginas</h3>
                             <ul className="flex flex-col gap-2 text-gray-500 text-sm ss:text-base">
                                 <LinkItem link="/" label="Inicio"/>
-                                <LinkItem link="/" label="Preços"/>
+                                <LinkItem link="/prices" label="Preços"/>
                                 <LinkItem link="/" label="Sobre Nós"/>
                                 <LinkItem link="/" label="Termos de Uso"/>
                                 <LinkItem link="/" label="Políticas de Privacidade"/> 
